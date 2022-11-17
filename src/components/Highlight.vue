@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden relative isolate" v-on:mousemove="updateCoordinates">
     <slot></slot>
-    <div ref="highlight" class=" fixed mix-blend-difference bg-highlight pointer-events-none" :style="style">
+    <div ref="highlight" class="hidden xl:block fixed mix-blend-difference bg-highlight pointer-events-none" :style="style">
     </div>
   </div>
 </template>

@@ -1,5 +1,4 @@
 <template>
-  <div class="bg-[#555]">
     <div class="mx-auto max-w-7xl p-10">
       <h2 class="text-2xl sm:text-5xl md:text-9xl ">Credits</h2>
       <h3 class="text-2xl sm:text-5xl md:text-9xl font-semibold mb-10">Made with</h3>
@@ -14,6 +13,5 @@
         <li>tailwindlabs/heroicons</li>
       </ul>
       <p>See more on <a href="https://github.com/pfaffenrodt/portfolio" class="font-bold">Github</a></p>
-    </div>
   </div>
 </template>

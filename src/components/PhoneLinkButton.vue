@@ -1,6 +1,6 @@
 <template>
   <a v-if="enabled" :href="phoneLink" class="cursor-pointer flex items-center">
-    <phone-icon class="mr-5 w-5 h-5 sm:w-10 sm:h-10 md:w-16 md:h-16"></phone-icon>
+    <phone-icon v-if="showIcon" class="mr-5 w-5 h-5 sm:w-10 sm:h-10 md:w-16 md:h-16"></phone-icon>
     {{ phone }}
   </a>
 </template>
@@ -11,6 +11,12 @@ import PhoneLink from "./PhoneLink";
 import { defineComponent } from 'vue';
 
 export default defineComponent({
+  props: {
+    showIcon: {
+      type: Boolean,
+      default: true,
+    }
+  },
   components: {
     PhoneIcon,
   },

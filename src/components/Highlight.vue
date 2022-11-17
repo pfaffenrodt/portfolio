@@ -1,7 +1,7 @@
 <template>
-  <div class="overflow-hidden bg-blue-900 relative isolate" v-on:mousemove="updateCoordinates">
+  <div class="overflow-hidden relative isolate" v-on:mousemove="updateCoordinates">
     <slot></slot>
-    <div ref="highlight" class=" fixed mix-blend-difference" :style="style">
+    <div ref="highlight" class=" fixed mix-blend-difference bg-highlight pointer-events-none" :style="style">
     </div>
   </div>
 </template>
@@ -35,13 +35,10 @@ export default defineComponent({
   },
   computed: {
     style() {
-      const bgWebKit = "white" ;
-
       return [
         'width: '+this.size+'px',
         'height: '+this.size+'px',
         'border-radius: '+this.size+'px',
-        'background: '+bgWebKit,
       ];
     }
   }

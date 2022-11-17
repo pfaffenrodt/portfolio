@@ -54,3 +54,35 @@
   url('./assets/fonts/poppins/poppins-v20-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
   url('./assets/fonts/poppins/poppins-v20-latin-900.svg#Poppins') format('svg'); /* Legacy iOS */
 }
+
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #fff;
+  transition: background-color;
+  transition-duration: 600ms;
+}
+
+.fp-viewing-2 #fp-nav ul li a span,
+.fp-viewing-2 .fp-slidesNav ul li a span {
+  background: #333;
+}
+
+.bg-highlight {
+  background: #ffffff;
+}
+
+.fp-overflow {
+  /*overflow-y: hidden !important;*/
+}
+
+.fp-viewing-2 .bg-highlight {
+  background: #ccc;
+}
+.fp-viewing-3 .bg-highlight {
+  background: #adc5c5;
+}
+
+.fp-viewing-4 .bg-highlight {
+  background: #555;
+}

@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden bg-blue-900 relative isolate" v-on:mousemove="updateCoordinates">
     <slot></slot>
-    <div ref="highlight" class=" absolute mix-blend-difference" :style="style">
+    <div ref="highlight" class=" fixed mix-blend-difference" :style="style">
     </div>
   </div>
 </template>
@@ -9,7 +9,7 @@
 <script lang="ts">
 
 import gsap from 'gsap';
-import { defineComponent, computed } from 'vue';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   data() {

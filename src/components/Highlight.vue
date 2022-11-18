@@ -28,7 +28,7 @@ export default defineComponent({
       gsap.to(this.$refs['highlight'], {
         top: (y - halfSize) + 'px',
         left: (x - halfSize) + 'px',
-        duration: 4,
+        duration: 0.5,
         ease: "elastic",
       });
     }

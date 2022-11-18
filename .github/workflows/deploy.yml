@@ -16,14 +16,14 @@ jobs:
         with:
           node-version: 16
       - run: npm install yarn -g
-      - name: Build App
+      - name: 🔨 Build App
         run: |
           yarn
           yarn build
-      - name: 📂 Sync files
+      - name: 🚀 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist
+          local-dir: ./dist/

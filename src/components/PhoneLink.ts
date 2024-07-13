@@ -7,7 +7,7 @@ export default class PhoneLink {
   }
   phoneToPrefix() { return this.decrypt("dGVsOg=="); }
   phone() {
-    return this.decrypt('MDE3NCA0OTggNTAgNDg=');
+    return this.decrypt('MDE1MiAyMzMwIDA5MTI=');
   }
   link() {
     return this.phoneToPrefix() + this.phone();
